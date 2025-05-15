@@ -1,0 +1,14 @@
+name: ddpm
+channels:
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.10  # package build failures on 3.10
+  - pip
+  - numpy
+  - pytorch
+  - requests
+  - tqdm
+  - pip:
+    - imageio-ffmpeg>=0.4.3
+    - pyspng
